@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "MuseoSansCyrl";
+    src: url("./fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+    src: url("./fonts/MuseoSansCyrl-500.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PT Serif";
+    src: url("./fonts/PTSerifRegular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Serif";
+    src: url("./fonts/PTSerifBold.woff") format("woff");
+  font-weight: bold;
+}
+
+.wrapper {
+  max-width: 1920px;
+  min-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(./img/background.png) no-repeat;
+  background-size: cover;
+  font-family: MuseoSansCyrl;
+}
+
+.header {
+  width: 87%;
+  height: 235px;	
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.stumb {
+  flex: 1;
+}
+
+.header__menu {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.top {
+  display: flex;
+}
+
+.inform {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 64%;
+  align-items: center;
+}
+
+.inform__content {
+  max-width: 527px;
+}
+
+.inform__img {
+  background: url("./img/Bali.png") no-repeat;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  background-size: 95%;
+  justify-content: center;
+  position: relative;
+}
+
+.inform__Indonesia {
+  font-family: PT Serif;
+  font-weight: bold;
+  padding-left: 83px;
+  color: #f8eee4;
+  font-size: 98px;
+  line-height: 130px;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 23%;
+}
+
+.inform__text {
+  color: #f8eee4;
+  font-size: 22px;
+  text-align: left;
+  line-height: 26px;
+  margin: 25px 0;
+}
+
+.inform__button {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #d4bea3;
+  cursor: pointer;
+  width: 293px;
+  height: 61px;
+  border: none;
+  font-weight: bold;
+  border-radius: 48px;
+}
+
+.images {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.images__item {
+  padding-left: 25px;
+}
