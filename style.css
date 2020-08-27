@@ -1,31 +1,8 @@
-@font-face {
-  font-family: "MuseoSansCyrl";
-    src: url("./fonts/MuseoSansCyrl-300.woff") format("woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-    src: url("./fonts/MuseoSansCyrl-500.woff") format("woff");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "PT Serif";
-    src: url("./fonts/PTSerifRegular.woff") format("woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "PT Serif";
-    src: url("./fonts/PTSerifBold.woff") format("woff");
-  font-weight: bold;
-}
-
 .wrapper {
   max-width: 1920px;
   min-width: 375px;
   height: 100%;
+  max-height: 1080px;
   margin: 0 auto;
   background: url(./img/background.png) no-repeat;
   background-size: cover;
@@ -98,7 +75,7 @@
   align-items: flex-end;
   justify-content: center;
   position: absolute;
-  top: 23%;
+  top: 24%;
 }
 
 .inform__text {
@@ -132,3 +109,81 @@
 .images__item {
   padding-left: 25px;
 }
+
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+  .header {
+    flex: 0;
+    margin-top: 30px;
+}
+ 
+  .top {
+    flex: 0;
+    display: block;
+}
+}
+
+@media (max-height: 500px) {
+  .images {
+    height: 75%;
+}
+}
+
+@media (min-width:1025px) and (max-width: 1366px) {
+  .header {
+  
+}
+
+  .header__logo-wrapper {
+  
+}
+
+  .header__logo {
+
+}
+
+  .header__menu {
+
+}
+  .header__menu-item {
+
+}
+  .top {
+
+}
+
+  .inform {
+
+}
+
+  .inform__content {
+
+}
+
+  .inform__img {
+
+}
+
+  .inform__Indonesia {
+
+}
+
+  .inform__text {
+
+}
+
+  .inform__button {
+
+}
+
+  .images {
+
+}
+
+  .images__item {
+
+}
+}
+
+
+
+
