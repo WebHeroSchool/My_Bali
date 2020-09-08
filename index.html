@@ -4,33 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  href="./style.css">
-  <link rel="stylesheet"  href="./fonts/font.css">
+  <link rel="stylesheet"  href="./font.css">
   <title>Bali</title>
 </head>
 <body class='wrapper'>
-  <header class='header'>
-  	<div class='logo-wrapper'>
-  		<img class='logo' src='./img/logo.png'alt='logo'>
+<header class='header'>
+  	<div class='header__logo-wrapper'>
+  	  <img class='header__logo' src='./img/logo.png' alt='logo'>
   	</div>
   	<div class='stumb'></div>
-  	  <nav class='menu'>
-  	  	<a href="#" class='menu__item'>Start</a>
-  	  	<a href="#" class='menu__item'>Services</a>
-  	  	<a href="#" class='menu__item'>About</a>
-  	  	<a href="#" class='menu__item'>Blog</a>
-  	  	<a href="#" class='menu__item'>Contact us</a>
-  	  </nav>  
+  	  <nav class='header__menu'>
+  	  	<a href="#" class='header__menu-item'>Start</a>
+  	  	<a href="#" class='header__menu-item'>Services</a>
+  	  	<a href="#" class='header__menu-item'>About</a>
+  	  	<a href="#" class='header__menu-item'>Blog</a>
+  	  	<a href="#" class='header__menu-item'>Contact us</a>
+  	  </nav>
+  	  <div class="header__burger burger">
+        <span class="burger__line-first"></span>
+        <span class="burger__line-second"></span>
+        <span class="burger__line-third"></span>
+      </div>
   </header>
   <div class='top'>
   	<section class="inform">
   	  <div class='inform__content'>
-  	    <div class='content__img'>
-  	      <img src="./img/Indonesia.png" class='Indonesia' alt='Indonesia'>	
-  	    </div>	
-  	    <p class='info__text'>Best Bali travel guide with great tips. Book hotels and villas, explore the best spas, events, Bali temples, scuba centers, and activities.</p>
+  	    <div class='inform__img'>
+  	      <h1 class='inform__Indonesia'>Indonesia</h1>	
+  	    </div>
+   	     <p class='inform__text'>Best Bali travel guide with great tips. Book hotels and villas, explore the best spas, events, Bali temples, scuba centers, and activities.</p>
   	    <button class="inform__button">Book travel</button>
-  	  </div>
-  	</section>  	   	    	   
+   	  </div>
+  	</section>   	    	   
   	<section class="images">
   		<img class='images__item' src='./img/left.png' alt='img'>
   		<img class='images__item' src='./img/center.png' alt='img'>

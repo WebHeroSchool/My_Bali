@@ -1,0 +1,259 @@
+.wrapper {
+  max-width: 1920px;
+  min-width: 375px;
+  max-height: 1080px;
+  margin: 0 auto;
+  background: url(./img/background.png) no-repeat;
+  background-size: cover;
+  font-family: MuseoSansCyrl;
+  height: 100vh;
+  height: 100%;
+}
+
+.header {
+  width: 87%;
+  height: 235px;	
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.stumb {
+  flex: 1;
+}
+
+.header__menu {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+  
+.header__burger {
+  display: none;
+  width: 25px;
+  height: 17px;
+  position: relative;
+}
+
+.burger__line {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  background: #808080;
+  left: 0;
+}
+
+.burger__line-first {
+  top: 0;
+}
+ 
+.burger__line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+ 
+.burger__line-third {
+  bottom: 0;
+}
+
+.top {
+  display: flex;
+}
+
+.inform {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 64%;
+  align-items: center;
+}
+
+.inform__content {
+  max-width: 527px;
+}
+
+.inform__img {
+  background: url("./img/Bali.png") no-repeat;
+  width: 527px;
+  height: 372px;
+  display: flex;
+  align-items: flex-end;
+  background-size: 95%;
+  justify-content: center;
+  top: 24%;
+}
+
+.inform__Indonesia {
+  font-family: PT Serif;
+  font-weight: bold;
+  width: 466px;
+  height: 130px;
+  padding-left: 83px;
+  color: #f8eee4;
+  font-size: 98px;
+  line-height: 130px;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 22%;
+}
+
+.inform__text {
+  color: #f8eee4;
+  font-size: 22px;
+  text-align: left;
+  line-height: 26px;
+  margin: 25px 0;
+  
+}
+
+.inform__button {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #d4bea3;
+  cursor: pointer;
+  width: 293px;
+  height: 61px;
+  border: none;
+  font-weight: bold;
+  border-radius: 48px;
+}
+
+.images {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.images__item {
+  padding-left: 25px;
+}
+
+ @media only screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  .header {
+    margin: 0 auto;
+    height: 22vh;
+  }
+
+  .header__logo-wrapper {
+    max-width: 22%; 
+  }
+  
+  .header__logo {
+    padding-left: 0;
+  }
+  
+  .inform {
+    height: 67vh;
+    justify-content: flex-start; 
+  }
+
+  .inform__Indonesia {
+    font-size: 70px;
+  }
+
+  .inform__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    width: 375px;
+    background-position: 54%;
+    height: 100vh;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 140px;
+  }
+
+  .header__logo-wrapper {
+    margin-left: 41px;
+  }
+  
+  .header__logo {
+    padding-left: 0;
+    width: 104px;
+    height: 39px;
+  }
+  
+  .header__menu {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 17px;
+    margin-top: 3%;
+  }
+
+  .burger__line {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fcf5ed;  
+    cursor: ;
+  }
+
+  .inform__img {
+    width: 318px;
+    height: 226px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 16px
+  }
+
+  .inform__Indonesia {
+    width: 284px;
+    height: 80px;
+    padding-left: 59px;    
+  }
+  
+  .inform__text {
+    width: 292.84px;
+    height: 87px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 41px;
+  }
+  
+  .inform__button {
+    width: 209px;
+    height: 44px;
+    font-size: 16px;
+    margin-left: 76px;
+    margin-bottom: 97px;
+  }
+
+  .images {
+    display: none;
+  }
+
