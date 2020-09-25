@@ -26,23 +26,30 @@
   height: 180px;	
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  height: 54px;
+  width: 147px;
+  margin-left: 0 25px;
 }
 
 .menu {
-  display: table;
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu li {
-  display: table-cell;
-  float: none;
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.menu li a {
-  display: block;
+.menu, a {
   text-decoration: none;
   text-align: center;
   font-family: 'Museo Sans Cyrl';
@@ -51,17 +58,12 @@
   color: #f8eee4;
 }
 
-#menu__toggle { /* скрываем чекбокс */
-  opacity: 0;
+.menu-link {
+  padding-right: 33px;
 }
 
-.list {
-  display: table;
-  justify-content: space-between;
-  list-style: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+#menu__toggle { /* скрываем чекбокс */
+  opacity: 0;
 }
 
 .top {
@@ -72,6 +74,7 @@
 
 .next {
   display: flex;
+  align-items: center;
 }
 
 .inform {
@@ -79,7 +82,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: #f8eee4;
-  height: 400px; 
+  height: 423px; 
 }
 
 .text {
@@ -103,7 +106,7 @@
 .text__Indonesia {
   font-family: 'PT Serif';
   font-style: normal;
-  margin: 230px 0 0 82px; 
+  margin: 230px 0 0 82px;
   font-weight: bold;
   font-size: 98px;
   line-height: 130px;
@@ -136,31 +139,62 @@
 }
 
 .images {
-  justify-content: flex-end;
   display: flex;
   align-items: center;
+  padding-left: 290px;
+  padding-top: 210px;
 }
 
 .images__item {
-  padding-left: 25px;
+  padding-right: 25px;
+
 }
 
  @media only screen and (max-width: 1024px) {
   .header {
-    width: 90%;
+    width: 80%;
+  }
+  
+  .header__logo {
+    margin-left: 41px;
+    margin-top: 63px;
+  }
+  .text {
+    width: 375px;
+    height: 265px;
   }
 
-  .top {
-    width: 90%;
+  .text__Bali {
+    font-size: 200px;
+    line-height: 265px;
   }
 
-  .inform {
-    flex: 1;
+  .text__Indonesia {
+    font-size: 70px;
+    line-height: 93px;
+    margin: 164px 0 0 59px;
+  }
+  .inform__title {
+    width: 399px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 19px;  
+  }
+  
+  .button {
+    width: 209px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .images {
-    flex: 1;
-  }
+    padding-left: 120px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    width: 679px;
+   }
 }
 
 @media (max-width: 768px) {
