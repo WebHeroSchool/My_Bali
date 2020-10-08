@@ -1,13 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-
-.body {
-  margin: 0 auto;  
+body {
+  margin: 0;
 }
 
 .container {
   display: flex;
+  margin: auto;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -23,43 +20,33 @@
 
 .header {
   width: 80%;
-  height: 180px;	
   display: flex;
   align-items: center;
-}
-
-.header__logo {
-  display: flex;
-  height: 54px;
-  width: 147px;
-  margin-left: 0 25px;
-}
-
-.menu {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
   justify-content: space-between;
 }
 
-.menu ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+.logo {
+  padding: 88px 0;
 }
 
-.menu, a {
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Museo Sans Cyrl';
-  font-size: 22px;
-  line-height: 26px;
-  color: #f8eee4;
+.menu__box {
+ display: flex;
+ width: 110%;
+ align-items: center;
+ justify-content: space-between;
 }
 
-.menu-link {
-  padding-right: 33px;
+.menu__box-link {
+ padding: 0 17px;
+ text-decoration: none;
+ color: #f8eee4;
+ font-family: 'Museo Sans Cyrl';
+ font-size: 22px;
+ line-height: 26px;
+}
+
+.menu__box-link:last-child {
+ padding-right: 0;
 }
 
 #menu__toggle { /* скрываем чекбокс */
@@ -68,13 +55,10 @@
 
 .top {
   display: flex;
-  flex-direction: row;
+  padding-top: 41px;
   width: 80%;
-}
-
-.next {
-  display: flex;
-  align-items: center;
+  border: dashed 1px yellow;
+  max-width: 1536px;
 }
 
 .inform {
@@ -82,16 +66,12 @@
   flex-direction: column;
   justify-content: space-between;
   color: #f8eee4;
-  height: 423px; 
+  border: dashed 1px white;
 }
 
 .text {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   color: #f8eee4;
-  width: 527px;
-  height: 372px;
   font-family: 'Museo Sans Cyrl';
 }
 
@@ -120,13 +100,11 @@
   font-size: 22px;
   line-height: 26px;
   color: #f8eee4;
-  margin-left: 20px;
+  margin: 0 0 24px 20px;
   width: 527px;
 }
 
-.button {
-  font-size: 22px;
-  line-height: 26px;
+.inform__button {
   color: #fff;
   background-color: #d4bea3;
   cursor: pointer;
@@ -134,34 +112,54 @@
   border: none;
   border-radius: 48px;
   text-decoration: none;
-  padding: 16px 85px;
   font-family: 'Museo Sans Cyrl';
+  padding: 16px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  margin-left: 20px;
+  transition: opacity .5s;
+}
+
+.inform__button:hover {
+  opacity .5s;
 }
 
 .images {
   display: flex;
   align-items: center;
-  padding-left: 290px;
-  padding-top: 210px;
+  border: dashed 1px red;
 }
 
 .images__item {
-  padding-right: 25px;
-
+  padding: 0 17px;
 }
 
  @media only screen and (max-width: 1024px) {
   .header {
-    width: 80%;
+    width: 90%;
   }
   
-  .header__logo {
-    margin-left: 41px;
-    margin-top: 63px;
+  .logo {
+    padding: 63px 0;
+    margin-right: 47%;
   }
-  .text {
-    width: 375px;
-    height: 265px;
+  
+  .menu__box {
+    display: flex;
+    padding-right: 61%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu__box-link {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .top {
+    width: 90%;
   }
 
   .text__Bali {
@@ -174,34 +172,32 @@
     line-height: 93px;
     margin: 164px 0 0 59px;
   }
+
   .inform__title {
-    width: 399px;
-    height: 58px;
-    font-size: 16px;
-    line-height: 19px;  
-  }
-  
-  .button {
-    width: 209px;
-    height: 44px;
     font-size: 16px;
     line-height: 19px;
+    text-align: left;
+    width: 379px;
+    border: dashed 1px red;
+  }
+  
+  .inform__button {
+    width: 209px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0; 
   }
 
-  .images {
-    padding-left: 120px;
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    width: 679px;
-   }
-}
+  .images__item {
+    padding: 0 12px;
+  }
+} 
 
 @media (max-width: 768px) {
   .header {
     height: 130px;
   }
-/* стилизуем кнопку */
+  /* стилизуем кнопку */
   .menu__btn { 
     display: flex; 
     align-items: flex-end;
@@ -252,7 +248,7 @@
     background-color: #e5e5e5;
   }
   /* элементы меню */
-  .menu__link {
+  .menu__box-link {
     display: block;
     padding-top: 186px;
     padding-left: 114px;
@@ -262,11 +258,11 @@
     font-weight: 700;
     text-decoration: none;
 }
-  .menu__link:hover {
+  .menu__box-link:hover {
     background-color: #fff;
 }
 
-  #menu__toggle:checked ~ .menu__btn > span { /*открыть/закрыть бургео*/
+  #menu__toggle:checked ~ .menu__btn > span { /*открыть/закрыть бургер*/
     transform: rotate(45deg);
   }
 
@@ -298,18 +294,8 @@
     transition-duration: .25s;
   }
 
-  .menu__link {
+  .menu__box-link {
     transition-duration: .25s;
-  }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    height: 276px;
-    padding-top: 0;
-    margin: 0;
-    align-items: center;
   }
 
   .top {
@@ -344,13 +330,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 293px;    
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
+    width: 292px;    
   }
 
   .images {
