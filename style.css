@@ -58,7 +58,6 @@ body {
   padding-top: 41px;
   width: 80%;
   border: dashed 1px yellow;
-  max-width: 1536px;
 }
 
 .inform {
@@ -128,21 +127,24 @@ body {
 .images {
   display: flex;
   align-items: center;
+  padding-left: 280px;
   border: dashed 1px red;
 }
 
-.images__item {
+.images__item-a, 
+.images__item-b, 
+.images__item-c {
   padding: 0 17px;
 }
 
- @media only screen and (max-width: 1024px) {
+@media (max-width: 1366px) {
   .header {
-    width: 90%;
+    width: 80%;
   }
   
   .logo {
     padding: 63px 0;
-    margin-right: 47%;
+    margin-right: 50%;
   }
   
   .menu__box {
@@ -159,7 +161,8 @@ body {
   }
 
   .top {
-    width: 90%;
+    width: 80%;
+
   }
 
   .text__Bali {
@@ -188,10 +191,114 @@ body {
     padding: 12px 0; 
   }
 
-  .images__item {
+  .images {
+    padding-left: 95px;
+  }
+
+  .images__item-a, 
+  .images__item-b, 
+  .images__item-c  {
     padding: 0 12px;
   }
-} 
+
+  .images__item-a {
+    width: 225.75px;
+    height: 300px;
+  } 
+
+  .images__item-b {
+    width: 202.27px;
+    height: 270px;
+  }
+
+  .images__item-c {
+    width: 180.6px;
+    height: 270px
+  } 
+  } 
+@media only screen and (max-width: 1024px) {
+  .container {
+    background: url(./img/background.png) 40%;
+  }
+
+  .header {
+    width: 90%;
+  }
+  
+  .logo {
+    padding: 63px 0;
+    margin-right: 47%;
+  }
+  
+  .menu__box {
+    display: flex;
+    padding-right: 61%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu__box-link {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .top {
+    width: 90%;
+    height: 386px;
+  }
+
+  .text__Bali {
+    font-size: 200px;
+    line-height: 265px;
+  }
+
+  .text__Indonesia {
+    font-size: 70px;
+    line-height: 93px;
+    margin: 164px 0 0 59px;
+  }
+
+  .inform__title {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    width: 379px;
+    border: dashed 1px red;
+  }
+  
+  .inform__button {
+    width: 209px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0; 
+  }
+
+  .images {
+    padding-left: 55px;
+  }
+
+  .images__item-a, 
+  .images__item-b, 
+  .images__item-c  {
+    padding: 0 12px;
+  }
+
+  .images__item-a {
+    width: 225.75px;
+    height: 300px;
+  } 
+
+  .images__item-b {
+    width: 202.27px;
+    height: 270px;
+  }
+
+  .images__item-c {
+    width: 180.6px;
+    height: 270px
+  } 
+  } 
 
 @media (max-width: 768px) {
   .header {
@@ -330,7 +437,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 292px;    
+    font-size: 18px;
+    line-height: 22px;
+    width: 285px;    
   }
 
   .images {
