@@ -4,38 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  href="./style.css">
-  <link rel="stylesheet"  href="./fonts/font.css">
+  <link rel="stylesheet"  href="./font.css">
   <title>Bali</title>
 </head>
-<body class='wrapper'>
+<body>
+<div class='container'>
   <header class='header'>
-  	<div class='logo-wrapper'>
-  		<img class='logo' src='./img/logo.png'alt='logo'>
+    <div class='logo'>
+  	  <img src='./img/logo.png' alt='logo'>
   	</div>
-  	<div class='stumb'></div>
-  	  <nav class='menu'>
-  	  	<a href="#" class='menu__item'>Start</a>
-  	  	<a href="#" class='menu__item'>Services</a>
-  	  	<a href="#" class='menu__item'>About</a>
-  	  	<a href="#" class='menu__item'>Blog</a>
-  	  	<a href="#" class='menu__item'>Contact us</a>
-  	  </nav>  
+    <div class="menu">
+        <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>     
+      <nav class="menu__box"> 
+        <a class="menu__box-link" href="/">Start</a>
+        <a class="menu__box-link" href="/">Services</a>
+        <a class="menu__box-link" href="/">About</a>
+        <a class="menu__box-link" href="/">Blog</a>
+        <a class="menu__box-link" href="/">Contact us</a>
+      </nav>
+   </div>  
   </header>
-  <div class='top'>
-  	<section class="inform">
-  	  <div class='inform__content'>
-  	    <div class='content__img'>
-  	      <img src="./img/Indonesia.png" class='Indonesia' alt='Indonesia'>	
-  	    </div>	
-  	    <p class='info__text'>Best Bali travel guide with great tips. Book hotels and villas, explore the best spas, events, Bali temples, scuba centers, and activities.</p>
-  	    <button class="inform__button">Book travel</button>
-  	  </div>
-  	</section>  	   	    	   
-  	<section class="images">
-  		<img class='images__item' src='./img/left.png' alt='img'>
-  		<img class='images__item' src='./img/center.png' alt='img'>
-  		<img class='images__item' src='./img/right.png' alt='img'>
-  	</section>
-  </div>
+    <div class='top'><!--желтый-->
+        <div class='inform'><!--белый-->
+          <div class='text'>
+      	    <h1 class='text__Bali'>Bali</h1>
+      	    <h2 class='text__Indonesia'>Indonesia</h2>
+          </div>
+            <p class='inform__title'>Best Bali travel guide with great tips. Book hotels and villas, explore the best spas, events, Bali temples, scuba centers, and activities.</p>
+            <a class="inform__button" href="/">Book travel</a>
+        </div>         
+        <div class="images"><!--red-->
+          <img class='images__item-a' src='./img/left.png' alt='img'>
+          <img class='images__item-b' src='./img/center.png' alt='img'>
+  	      <img class='images__item-c' src='./img/right.png' alt='img'>
+        </div>           
+    </div>
+</div>
 </body>
 </html>

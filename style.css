@@ -1,0 +1,448 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(./img/background.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  max-width: 1920px;
+  min-width: 375px;
+  max-height: 1080px;
+}
+
+.header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 88px 0;
+}
+
+.menu__box {
+ display: flex;
+ width: 110%;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.menu__box-link {
+ padding: 0 17px;
+ text-decoration: none;
+ color: #f8eee4;
+ font-family: 'Museo Sans Cyrl';
+ font-size: 22px;
+ line-height: 26px;
+}
+
+.menu__box-link:last-child {
+ padding-right: 0;
+}
+
+#menu__toggle { /* скрываем чекбокс */
+  opacity: 0;
+}
+
+.top {
+  display: flex;
+  padding-top: 41px;
+  width: 80%;
+  border: dashed 1px yellow;
+}
+
+.inform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f8eee4;
+  border: dashed 1px white;
+}
+
+.text {
+  display: flex;
+  color: #f8eee4;
+  font-family: 'Museo Sans Cyrl';
+}
+
+.text__Bali {
+  font-family: 'PT Serif';
+  font-size: 280px;
+  line-height: 371px;
+  opacity: 0.4;
+  margin: 0;
+}
+
+.text__Indonesia {
+  font-family: 'PT Serif';
+  font-style: normal;
+  margin: 230px 0 0 82px;
+  font-weight: bold;
+  font-size: 98px;
+  line-height: 130px;
+  display: flex;
+  color: #f8eee4;
+  position: absolute;
+}
+
+.inform__title {
+  font-family: 'Museo Sans Cyrl';
+  font-size: 22px;
+  line-height: 26px;
+  color: #f8eee4;
+  margin: 0 0 24px 20px;
+  width: 527px;
+}
+
+.inform__button {
+  color: #fff;
+  background-color: #d4bea3;
+  cursor: pointer;
+  width: 293px;
+  border: none;
+  border-radius: 48px;
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl';
+  padding: 16px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  margin-left: 20px;
+  transition: opacity .5s;
+}
+
+.inform__button:hover {
+  opacity .5s;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  padding-left: 280px;
+  border: dashed 1px red;
+}
+
+.images__item-a, 
+.images__item-b, 
+.images__item-c {
+  padding: 0 17px;
+}
+
+@media (max-width: 1366px) {
+  .header {
+    width: 80%;
+  }
+  
+  .logo {
+    padding: 63px 0;
+    margin-right: 50%;
+  }
+  
+  .menu__box {
+    display: flex;
+    padding-right: 61%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu__box-link {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .top {
+    width: 80%;
+
+  }
+
+  .text__Bali {
+    font-size: 200px;
+    line-height: 265px;
+  }
+
+  .text__Indonesia {
+    font-size: 70px;
+    line-height: 93px;
+    margin: 164px 0 0 59px;
+  }
+
+  .inform__title {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    width: 379px;
+    border: dashed 1px red;
+  }
+  
+  .inform__button {
+    width: 209px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0; 
+  }
+
+  .images {
+    padding-left: 95px;
+  }
+
+  .images__item-a, 
+  .images__item-b, 
+  .images__item-c  {
+    padding: 0 12px;
+  }
+
+  .images__item-a {
+    width: 225.75px;
+    height: 300px;
+  } 
+
+  .images__item-b {
+    width: 202.27px;
+    height: 270px;
+  }
+
+  .images__item-c {
+    width: 180.6px;
+    height: 270px
+  } 
+  } 
+@media only screen and (max-width: 1024px) {
+  .container {
+    background: url(./img/background.png) 40%;
+  }
+
+  .header {
+    width: 90%;
+  }
+  
+  .logo {
+    padding: 63px 0;
+    margin-right: 47%;
+  }
+  
+  .menu__box {
+    display: flex;
+    padding-right: 61%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu__box-link {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .top {
+    width: 90%;
+    height: 386px;
+  }
+
+  .text__Bali {
+    font-size: 200px;
+    line-height: 265px;
+  }
+
+  .text__Indonesia {
+    font-size: 70px;
+    line-height: 93px;
+    margin: 164px 0 0 59px;
+  }
+
+  .inform__title {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    width: 379px;
+    border: dashed 1px red;
+  }
+  
+  .inform__button {
+    width: 209px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0; 
+  }
+
+  .images {
+    padding-left: 55px;
+  }
+
+  .images__item-a, 
+  .images__item-b, 
+  .images__item-c  {
+    padding: 0 12px;
+  }
+
+  .images__item-a {
+    width: 225.75px;
+    height: 300px;
+  } 
+
+  .images__item-b {
+    width: 202.27px;
+    height: 270px;
+  }
+
+  .images__item-c {
+    width: 180.6px;
+    height: 270px
+  } 
+  } 
+
+@media (max-width: 768px) {
+  .header {
+    height: 130px;
+  }
+  /* стилизуем кнопку */
+  .menu__btn { 
+    display: flex; 
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: fixed;
+    margin-top: -20px;
+    left: 80%;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+/* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fcf5ed;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -7px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 7px;
+  }
+/* контейнер меню */
+  .menu__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #e5e5e5;
+  }
+  /* элементы меню */
+  .menu__box-link {
+    display: block;
+    padding-top: 186px;
+    padding-left: 114px;
+    color: #000;
+    font-family: ' Museo Sans Cyrl';
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+  .menu__box-link:hover {
+    background-color: #fff;
+}
+
+  #menu__toggle:checked ~ .menu__btn > span { /*открыть/закрыть бургер*/
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #172f27;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #172f27;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+    z-index: 1;
+  }
+/*анимация*/
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+
+  .menu__box {
+    transition-duration: .25s;
+  }
+
+  .menu__box-link {
+    transition-duration: .25s;
+  }
+
+  .top {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inform {
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 435px;
+  }
+
+  .text {
+    width: 318px;
+    height: 226px;
+  }
+
+  .text__Bali {
+    font-size: 170px;
+    line-height: 225px;
+  }
+
+  .text__Indonesia {
+    margin: 148px 0 0 70px;
+    font-size: 60px;
+    line-height: 79px;
+  }
+
+  .inform__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    width: 285px;    
+  }
+
+  .images {
+    display: none;
+  }
+}
