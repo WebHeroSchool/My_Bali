@@ -162,7 +162,6 @@ body {
 
   .top {
     width: 80%;
-
   }
 
   .text__Bali {
@@ -192,7 +191,7 @@ body {
   }
 
   .images {
-    padding-left: 95px;
+    padding-left: 150px;
   }
 
   .images__item-a, 
@@ -345,8 +344,8 @@ body {
     flex-direction: column;
     position: fixed;
     visibility: hidden;
+    left: 0;
     top: 0;
-    right: -100%;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -355,16 +354,20 @@ body {
     background-color: #e5e5e5;
   }
   /* элементы меню */
-  .menu__box-link {
+  .menu__box-link { /*выпадающее меню для смартфона*/
     display: block;
-    padding-top: 186px;
-    padding-left: 114px;
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center; /*выравниваем по центру*/
+    text-transform: lowercase; /*все буквы прописные*/
     color: #000;
-    font-family: ' Museo Sans Cyrl';
+    font-family: 'Museo Sans Cyrl';
     font-size: 30px;
-    font-weight: 700;
+    line-height: 36px;
+    font-weight: bold;
     text-decoration: none;
 }
+
   .menu__box-link:hover {
     background-color: #fff;
 }
