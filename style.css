@@ -57,7 +57,6 @@ body {
   display: flex;
   padding-top: 41px;
   width: 80%;
-  border: dashed 1px yellow;
 }
 
 .inform {
@@ -65,7 +64,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: #f8eee4;
-  border: dashed 1px white;
 }
 
 .text {
@@ -180,7 +178,6 @@ body {
     line-height: 19px;
     text-align: left;
     width: 379px;
-    border: dashed 1px red;
   }
   
   .inform__button {
