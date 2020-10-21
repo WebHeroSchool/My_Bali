@@ -27,8 +27,12 @@ body {
 
 .logo {
   margin-right: 49vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
   margin-left: 10.3vw;
+}
+
+.logo img {
+  margin-top: -1vw;
 }
 
 .menu {
@@ -113,7 +117,7 @@ body {
   color: #f8eee4;
   margin: 0 0 44px 27px;
   width: 527px;
-  margin-top: 0.8vw;
+  margin-top: 0.5vw;
 }
 
 .inform__button {
@@ -131,6 +135,7 @@ body {
   line-height: 26px;
   margin-left: 20px;
   transition: opacity .5s;
+  margin-top: -0.5vh;
 }
 
 .inform__button:hover {
@@ -141,7 +146,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 105px;
-  padding-top: 5.2vw;
+  padding-top: 6vw;
 }
 
 .images__item-a, 
@@ -241,22 +246,29 @@ body {
   } 
 
 @media (max-width: 1024px) {
+  .logo {
+    margin-right: 44vw;
+  }
+
   .logo img{
     margin-left: -6vw;
   }
   
   .menu__box {
-    margin-top: 1.3vw;
+    margin-top: 1.8vw;
+    margin-left: 2.5vw;
   }
 
   .menu__box-link {
-    padding: 0 12px;
-    font-size: 16px;
-    line-height: 19px;
+    margin-left: -0.6vw;
+  }
+
+  .menu__box-link:last-child {
+    margin-left: -0.5vw; 
   }
 
   .inform {
-    margin-left: 4.2vw;
+    margin-left: 3.5vw;
   }
 
   .text__Bali {
@@ -272,12 +284,12 @@ body {
 
   .inform__title {
     margin-left: 2vw;
+    margin-top: 0.7vw;
   }
   
   .images {
-    margin-top: 4vh;
-    margin-left: -2vw;
-    padding-left: 5px;
+    margin-top: 2vh;
+    margin-left: -10vw;
   }
 
   .images__item-a, 
@@ -314,14 +326,14 @@ body {
   /* стилизуем кнопку */
   .menu__btn { 
     display: flex; 
-    align-items: flex-end;
     flex-wrap: wrap;
     position: fixed;
+    margin-top: 24px;
     width: 25px;
     height: 25px;
     cursor: pointer;
     z-index: 2;
-    margin-left: -3vw;
+    margin-left: -1vw;
   }
 /* добавляем "гамбургер" */
   .menu__btn > span,
@@ -364,7 +376,7 @@ body {
   .menu__box-link { /*выпадающее меню для смартфона*/
     display: block;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     text-align: center; /*выравниваем по центру*/
     text-transform: lowercase; /*все буквы прописные*/
     color: #000;
@@ -376,7 +388,8 @@ body {
   }
 
   .menu__box-link:last-child {
-    margin-left: 1vw;
+    margin-left: -2vw;
+    margin-bottom: 2vh;
   }
 
   .menu__box-link:hover {
@@ -445,7 +458,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     width: 285px;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-right: -5vw;
   }
 
