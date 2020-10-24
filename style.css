@@ -175,18 +175,13 @@ body {
 
   .logo img {
     width: 104px;
-    margin-left: 0.5vw;
   }
-
-  .menu__box {
-    margin-left: 2.8vh;
-  }
-
+  
   .menu__box-link {
     padding: 0 12px;
     font-size: 16px;
     line-height: 19px;
-    margin-top: -1vh;
+    margin-top: -0.8vw;
   }
 
   .text {
@@ -220,7 +215,7 @@ body {
   }
 
   .images {
-    padding-left: 80px;
+    margin-left: -3.2vw;
   }
 
   .images__item-a, 
@@ -237,11 +232,13 @@ body {
   .images__item-b {
     width: 202.27px;
     height: 270px;
+    margin-left: -0.5vw;
   }
 
   .images__item-c {
     width: 180.6px;
-    height: 270px
+    height: 270px;
+    margin-left: -1vw;
   } 
   } 
 
@@ -251,12 +248,12 @@ body {
   }
 
   .logo img{
-    margin-left: -6vw;
+    margin-left: -12vw;
   }
   
   .menu__box {
-    margin-top: 1.8vw;
-    margin-left: 2.5vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
   }
 
   .menu__box-link {
@@ -289,7 +286,7 @@ body {
   
   .images {
     margin-top: 2vh;
-    margin-left: -10vw;
+    margin-left: -12vw;
   }
 
   .images__item-a, 
@@ -314,28 +311,35 @@ body {
   } 
   } 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     background: url(./img/backmobile.jpg) no-repeat;
   }
 
   .header {
     height: 120px;
-    margin-left: 13vw;
+  }
+
+  .logo img {
+    margin-left: 1vw;
+  }
+
+  .menu {
+    margin-left: -1vw;
   }
   /* стилизуем кнопку */
   .menu__btn { 
     display: flex; 
-    flex-wrap: wrap;
-    position: fixed;
-    margin-top: 24px;
+    position: absolute;
     width: 25px;
     height: 25px;
     cursor: pointer;
     z-index: 2;
-    margin-left: -1vw;
+    align-items: center;
+    margin-top: 9vw;
+    margin-left: 3vw;
   }
-/* добавляем "гамбургер" */
+  /* добавляем "гамбургер" */
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -376,7 +380,7 @@ body {
   .menu__box-link { /*выпадающее меню для смартфона*/
     display: block;
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     text-align: center; /*выравниваем по центру*/
     text-transform: lowercase; /*все буквы прописные*/
     color: #000;
@@ -387,9 +391,12 @@ body {
     text-decoration: none;
   }
 
+  .menu__box-link:first-child {
+    margin-top: 4.5vw;
+  }
+
   .menu__box-link:last-child {
-    margin-left: -2vw;
-    margin-bottom: 2vh;
+    margin-top: -3vw;
   }
 
   .menu__box-link:hover {
@@ -463,7 +470,6 @@ body {
   }
 
   .inform__button {
-    margin-top: -3vw;
     margin-right: 2vw;
   }
 
