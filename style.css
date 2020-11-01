@@ -116,7 +116,8 @@ body {
   line-height: 26px;
   color: #f8eee4;
   margin: 0 0 44px 27px;
-  width: 527px;
+  width: 537px;
+  font-weight: normal;
   margin-top: 0.5vw;
 }
 
@@ -168,7 +169,7 @@ body {
   width: 11vw;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1367px) {
   .header {
     height: 150px;
   }
@@ -181,29 +182,31 @@ body {
     padding: 0 12px;
     font-size: 16px;
     line-height: 19px;
-    margin-top: -0.8vw;
-  }
-
-  .text {
-    margin-top: 0.5vh;
-    margin-left: 0.5vw;
+    margin-top: -0.5vw;
   }
 
   .text__Bali {
     font-size: 200px;
     line-height: 265px;
+    font-style: normal;
+    font-weight: bold;
   }
 
   .text__Indonesia {
+    font-style: normal;
+    font-weight: bold;
     font-size: 70px;
     line-height: 93px;
-    margin: 164px 0 0 59px;
+    margin: 155px 0 0 60px;
   }
 
   .inform__title {
+    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    width: 379px;
+    width: 389px;
+    margin-left: 1vw;
+    margin-top: 0;
   }
   
   .inform__button {
@@ -211,20 +214,15 @@ body {
     font-size: 16px;
     line-height: 19px;
     padding: 12px 0;
-    margin-top: -1.3vw; 
+    margin-top: -1.5vw;
   }
 
   .images {
-    margin-left: -3.2vw;
-  }
-
-  .images__item-a, 
-  .images__item-b, 
-  .images__item-c  {
-    padding: 0 12px;
+    margin-left: -2.5vw;
   }
 
   .images__item-a {
+    margin-right: -0.5vw;
     width: 225.75px;
     height: 300px;
   } 
@@ -232,61 +230,78 @@ body {
   .images__item-b {
     width: 202.27px;
     height: 270px;
-    margin-left: -0.5vw;
   }
 
   .images__item-c {
     width: 180.6px;
     height: 270px;
-    margin-left: -1vw;
+    padding-left: 0;
   } 
-  } 
+} 
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
+  .header {
+    height: 150px;
+    margin-left: -12.5vw;
+    margin-top: 0.5vw;
+  }
+  
   .logo {
-    margin-right: 44vw;
+    margin-right: 46vw;
   }
 
-  .logo img{
-    margin-left: -12vw;
+  .logo img {
+    width: 104px;
   }
   
   .menu__box {
     margin-top: 1vw;
-    margin-left: 2vw;
   }
 
   .menu__box-link {
-    margin-left: -0.6vw;
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
   }
-
-  .menu__box-link:last-child {
-    margin-left: -0.5vw; 
-  }
-
-  .inform {
+ 
+   .inform {
     margin-left: 3.5vw;
   }
 
   .text__Bali {
     font-size: 200px;
     line-height: 265px;
+    font-style: normal;
+    font-weight: bold;
   }
 
   .text__Indonesia {
+    font-style: normal;
+    font-weight: bold;
     font-size: 70px;
     line-height: 93px;
-    margin: 164px 0 0 59px;
+    margin: 155px 0 0 60px;
   }
 
   .inform__title {
-    margin-left: 2vw;
-    margin-top: 0.7vw;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    width: 389px;
+    margin-top: 0;
   }
   
+  .inform__button {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0;
+    width: 209px;
+    margin-top: -1.5vw;
+  }
+
   .images {
     margin-top: 2vh;
-    margin-left: -12vw;
+    margin-left: -11.5vw;
   }
 
   .images__item-a, 
@@ -310,8 +325,6 @@ body {
     height: 270px
   } 
   } 
-
-@media (max-width: 767px) {
   .container {
     background: url(./img/backmobile.jpg) no-repeat;
   }
@@ -321,7 +334,7 @@ body {
   }
 
   .logo img {
-    margin-left: 1vw;
+    margin-left: 6vw;
   }
 
   .menu {
@@ -337,7 +350,12 @@ body {
     z-index: 2;
     align-items: center;
     margin-top: 9vw;
-    margin-left: 3vw;
+    margin-left: 2vw;
+  }
+  /*крестик*/
+  #menu__toggle:checked ~ .menu__btn {
+    margin-top: 3vw;
+    margin-left: 4.5vw;
   }
   /* добавляем "гамбургер" */
   .menu__btn > span,
@@ -380,7 +398,7 @@ body {
   .menu__box-link { /*выпадающее меню для смартфона*/
     display: block;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     text-align: center; /*выравниваем по центру*/
     text-transform: lowercase; /*все буквы прописные*/
     color: #000;
@@ -392,11 +410,12 @@ body {
   }
 
   .menu__box-link:first-child {
-    margin-top: 4.5vw;
+    margin-top: 3vw;
   }
 
   .menu__box-link:last-child {
-    margin-top: -3vw;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .menu__box-link:hover {
@@ -438,6 +457,10 @@ body {
   .menu__box-link {
     transition-duration: .25s;
   }
+  
+  .top {
+    margin-top: 0;
+  }
 
   .inform {
     align-items: center;
@@ -464,7 +487,7 @@ body {
   .inform__title {
     font-size: 18px;
     line-height: 22px;
-    width: 285px;
+    width: 290px;
     margin-top: 40px;
     margin-right: -5vw;
   }
