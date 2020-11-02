@@ -140,7 +140,7 @@ body {
 }
 
 .inform__button:hover {
-  opacity .5s;
+  opacity .5;
 }
 
 .images {
@@ -253,10 +253,6 @@ body {
   .logo img {
     width: 104px;
   }
-  
-  .menu__box {
-    margin-top: 1vw;
-  }
 
   .menu__box-link {
     padding: 0 12px;
@@ -325,6 +321,8 @@ body {
     height: 270px
   } 
   } 
+
+  @media (max-width: 768px) {
   .container {
     background: url(./img/backmobile.jpg) no-repeat;
   }
