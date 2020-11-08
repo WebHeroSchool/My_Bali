@@ -11,11 +11,9 @@ body {
   background: url(./img/background.png) no-repeat;
   background-size: cover;
   overflow: hidden;
-  width: 100%;
   height: 100vh;
   max-width: 1920px;
   min-width: 375px;
-  max-height: 1080px;
 }
 
 .header {
@@ -169,6 +167,10 @@ body {
   width: 11vw;
 }
 
+@media (min-width: 1368px) and (max-width: 1656px) {
+
+}
+
 @media (max-width: 1367px) {
   .header {
     height: 150px;
@@ -238,20 +240,21 @@ body {
     padding-left: 0;
   } 
 } 
+@media (min-width: 1026px) and (max-width: 1189px) {
 
-@media (max-width: 1025px) {
-  .header {
-    height: 150px;
-    margin-left: -12.5vw;
-    margin-top: 0.5vw;
-  }
-  
+}
+@media (max-width: 1025px) {  
   .logo {
-    margin-right: 46vw;
+    margin-right: 45.5vw;
+    margin-left: 4vw;
   }
 
   .logo img {
     width: 104px;
+  }
+  
+  .menu__box {
+    margin-top: 1.5vw;
   }
 
   .menu__box-link {
@@ -261,7 +264,7 @@ body {
   }
  
    .inform {
-    margin-left: 3.5vw;
+    margin-left: 3.9vw;
   }
 
   .text__Bali {
@@ -285,6 +288,7 @@ body {
     line-height: 19px;
     width: 389px;
     margin-top: 0;
+    margin-left: 1.5vw
   }
   
   .inform__button {
@@ -297,7 +301,7 @@ body {
 
   .images {
     margin-top: 2vh;
-    margin-left: -11.5vw;
+    margin-left: -12vw;
   }
 
   .images__item-a, 
@@ -322,13 +326,17 @@ body {
   } 
   } 
 
-  @media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     background: url(./img/backmobile.jpg) no-repeat;
   }
 
   .header {
     height: 120px;
+  }
+  
+  .logo {
+    margin-right: 33vw;
   }
 
   .logo img {
@@ -348,12 +356,12 @@ body {
     z-index: 2;
     align-items: center;
     margin-top: 9vw;
-    margin-left: 2vw;
+    margin-left: 15vw;
   }
   /*крестик*/
   #menu__toggle:checked ~ .menu__btn {
     margin-top: 3vw;
-    margin-left: 4.5vw;
+    margin-left: 17vw;
   }
   /* добавляем "гамбургер" */
   .menu__btn > span,
@@ -497,4 +505,8 @@ body {
   .images {
     display: none;
   }
+}
+
+@media (max-width: 767px), (orientation: landscape) {
+
 }
