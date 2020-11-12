@@ -167,11 +167,8 @@ body {
   width: 11vw;
 }
 
-@media (min-width: 1368px) and (max-width: 1656px) {
 
-}
-
-@media (max-width: 1367px) {
+@media (max-width: 1665px) {
   .header {
     height: 150px;
   }
@@ -240,13 +237,12 @@ body {
     padding-left: 0;
   } 
 } 
-@media (min-width: 1026px) and (max-width: 1189px) {
 
-}
-@media (max-width: 1025px) {  
+@media (max-width: 1200px) {
   .logo {
-    margin-right: 45.5vw;
+    margin-right: 46vw;
     margin-left: 4vw;
+    margin-top: 3vw;
   }
 
   .logo img {
@@ -326,25 +322,13 @@ body {
   } 
   } 
 
-@media (max-width: 767px) {
-  .container {
-    background: url(./img/backmobile.jpg) no-repeat;
-  }
-
+@media (max-width: 1000px) {
   .header {
     height: 120px;
-  }
-  
-  .logo {
-    margin-right: 33vw;
   }
 
   .logo img {
     margin-left: 6vw;
-  }
-
-  .menu {
-    margin-left: -1vw;
   }
   /* стилизуем кнопку */
   .menu__btn { 
@@ -356,12 +340,12 @@ body {
     z-index: 2;
     align-items: center;
     margin-top: 9vw;
-    margin-left: 15vw;
+    margin-left: 1vw;
   }
   /*крестик*/
   #menu__toggle:checked ~ .menu__btn {
     margin-top: 3vw;
-    margin-left: 17vw;
+    margin-left: 4vw;
   }
   /* добавляем "гамбургер" */
   .menu__btn > span,
@@ -485,7 +469,7 @@ body {
   }
 
   .text__Indonesia {
-    margin: 155px 0 0 60px;
+    margin: 150px 0 0 60px;
     font-size: 60px;
     line-height: 79px;
   }
@@ -507,6 +491,3 @@ body {
   }
 }
 
-@media (max-width: 767px), (orientation: landscape) {
-
-}
