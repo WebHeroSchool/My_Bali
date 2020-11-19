@@ -320,7 +320,7 @@ body {
     width: 180.6px;
     height: 270px
   } 
-  } 
+} 
 
 @media (max-width: 1000px) {
   .header {
@@ -491,3 +491,20 @@ body {
   }
 }
 
+@media screen and (orientation: portrait) and (max-width: 1000px) {
+  .logo {
+    margin-left: 18vw;
+  }
+
+  .menu {
+    margin-top: 0;
+  }
+
+  .menu__btn {
+    margin-top: 8vw;
+  }
+  
+  .top {
+    margin-left: 38vw;
+  }
+}
