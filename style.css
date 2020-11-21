@@ -169,10 +169,6 @@ body {
 
 
 @media (max-width: 1665px) {
-  .header {
-    height: 150px;
-  }
-
   .logo img {
     width: 104px;
   }
@@ -182,6 +178,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     margin-top: -0.5vw;
+  }
+  
+  .top {
+    margin-top: -0.7vw;
   }
 
   .text__Bali {
@@ -205,7 +205,6 @@ body {
     line-height: 19px;
     width: 389px;
     margin-left: 1vw;
-    margin-top: 0;
   }
   
   .inform__button {
@@ -258,9 +257,14 @@ body {
     font-size: 16px;
     line-height: 19px;
   }
- 
-   .inform {
+  
+  .top { 
+  margin: 0;
+  }
+
+  .inform {
     margin-left: 3.9vw;
+    margin-top: 1vw;
   }
 
   .text__Bali {
@@ -324,12 +328,14 @@ body {
 
 @media (max-width: 1000px) {
   .header {
-    height: 120px;
+    justify-content: space-around;
   }
 
   .logo img {
-    margin-left: 6vw;
+    margin-left: 5vw;
+    margin-top: 8vw;
   }
+
   /* стилизуем кнопку */
   .menu__btn { 
     display: flex; 
@@ -339,8 +345,8 @@ body {
     cursor: pointer;
     z-index: 2;
     align-items: center;
+    margin-left: -7vw;
     margin-top: 9vw;
-    margin-left: 1vw;
   }
   /*крестик*/
   #menu__toggle:checked ~ .menu__btn {
@@ -450,15 +456,16 @@ body {
   
   .top {
     margin-top: 0;
+    justify-content: space-around;
   }
 
   .inform {
     align-items: center;
     text-align: center;
-    margin-top: -4.5vh;
   }
 
   .text {
+    margin-left: -10vw;
     width: 318px;
     height: 226px;
   }
@@ -478,33 +485,15 @@ body {
     font-size: 18px;
     line-height: 22px;
     width: 290px;
-    margin-top: 40px;
-    margin-right: -5vw;
+    margin-top: 42px;
+    margin-right: 7vw;
   }
 
   .inform__button {
-    margin-right: 2vw;
+    margin-right: 14vw;
   }
 
   .images {
     display: none;
-  }
-}
-
-@media screen and (orientation: portrait) and (max-width: 1000px) {
-  .logo {
-    margin-left: 18vw;
-  }
-
-  .menu {
-    margin-top: 0;
-  }
-
-  .menu__btn {
-    margin-top: 8vw;
-  }
-  
-  .top {
-    margin-left: 38vw;
   }
 }
