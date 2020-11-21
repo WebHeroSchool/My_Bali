@@ -1,0 +1,499 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(./img/background.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  max-width: 1920px;
+  min-width: 375px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  margin-right: 49vw;
+  margin-top: 2vw;
+  margin-left: 10.3vw;
+}
+
+.logo img {
+  margin-top: -1vw;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 9vw; 
+}
+
+.menu__box {
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.menu__box-link {
+ padding: 0 17px;
+ margin-right: 0.3vw;
+ text-decoration: none;
+ color: #f8eee4;
+ font-family: 'Museo Sans Cyrl';
+ font-size: 22px;
+ line-height: 26px;
+}
+
+.menu__box-link:last-child {
+ padding-right: 0;
+}
+
+#menu__toggle { /* скрываем чекбокс */
+  opacity: 0;
+}
+
+.top {
+  display: flex;
+  padding-top: 41px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.inform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f8eee4;
+  margin-left: 10.3vw;
+}
+
+.text {
+  display: flex;
+  color: #f8eee4;
+  font-family: 'Museo Sans Cyrl';
+  margin-top: 1vw;
+}
+
+.text__Bali {
+  font-family: 'PT Serif';
+  font-size: 280px;
+  line-height: 371px;
+  opacity: 0.4;
+  margin: 0;
+  margin-right: 10.3vw;
+}
+
+.text__Indonesia {
+  font-family: 'PT Serif';
+  font-style: normal;
+  margin: 230px 0 0 82px;
+  font-weight: bold;
+  font-size: 98px;
+  line-height: 130px;
+  display: flex;
+  color: #f8eee4;
+  position: absolute;
+}
+
+.inform__title {
+  font-family: 'Museo Sans Cyrl';
+  font-size: 22px;
+  line-height: 26px;
+  color: #f8eee4;
+  margin: 0 0 44px 27px;
+  width: 537px;
+  font-weight: normal;
+  margin-top: 0.5vw;
+}
+
+.inform__button {
+  color: #fff;
+  background-color: #d4bea3;
+  cursor: pointer;
+  width: 293px;
+  border: none;
+  border-radius: 48px;
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl';
+  padding: 16px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  margin-left: 20px;
+  transition: opacity .5s;
+  margin-top: -0.5vh;
+}
+
+.inform__button:hover {
+  opacity .5;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+  padding-top: 6vw;
+}
+
+.images__item-a, 
+.images__item-b, 
+.images__item-c {
+  padding: 0 17px;
+}
+
+.images__item-a {
+  width: 16.5vw;
+  height: 22vw;
+}
+
+.images__item-b {
+  width: 15vw;
+}
+
+.images__item-c {
+  width: 11vw;
+}
+
+
+@media (max-width: 1665px) {
+  .logo img {
+    width: 104px;
+  }
+  
+  .menu__box-link {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: -0.5vw;
+  }
+  
+  .top {
+    margin-top: -0.7vw;
+  }
+
+  .text__Bali {
+    font-size: 200px;
+    line-height: 265px;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .text__Indonesia {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 93px;
+    margin: 155px 0 0 60px;
+  }
+
+  .inform__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    width: 389px;
+    margin-left: 1vw;
+  }
+  
+  .inform__button {
+    width: 209px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0;
+    margin-top: -1.5vw;
+  }
+
+  .images {
+    margin-left: -2.5vw;
+  }
+
+  .images__item-a {
+    margin-right: -0.5vw;
+    width: 225.75px;
+    height: 300px;
+  } 
+
+  .images__item-b {
+    width: 202.27px;
+    height: 270px;
+  }
+
+  .images__item-c {
+    width: 180.6px;
+    height: 270px;
+    padding-left: 0;
+  } 
+} 
+
+@media (max-width: 1200px) {
+  .logo {
+    margin-right: 46vw;
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+
+  .logo img {
+    width: 104px;
+  }
+  
+  .menu__box {
+    margin-top: 1.5vw;
+  }
+
+  .menu__box-link {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .top { 
+  margin: 0;
+  }
+
+  .inform {
+    margin-left: 3.9vw;
+    margin-top: 1vw;
+  }
+
+  .text__Bali {
+    font-size: 200px;
+    line-height: 265px;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .text__Indonesia {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 93px;
+    margin: 155px 0 0 60px;
+  }
+
+  .inform__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    width: 389px;
+    margin-top: 0;
+    margin-left: 1.5vw
+  }
+  
+  .inform__button {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0;
+    width: 209px;
+    margin-top: -1.5vw;
+  }
+
+  .images {
+    margin-top: 2vh;
+    margin-left: -12vw;
+  }
+
+  .images__item-a, 
+  .images__item-b, 
+  .images__item-c  {
+    padding: 0 12px;
+  }
+
+  .images__item-a {
+    width: 225.75px;
+    height: 300px;
+  } 
+
+  .images__item-b {
+    width: 202.27px;
+    height: 270px;
+  }
+
+  .images__item-c {
+    width: 180.6px;
+    height: 270px
+  } 
+} 
+
+@media (max-width: 1000px) {
+  .header {
+    justify-content: space-around;
+  }
+
+  .logo img {
+    margin-left: 5vw;
+    margin-top: 8vw;
+  }
+
+  /* стилизуем кнопку */
+  .menu__btn { 
+    display: flex; 
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 2;
+    align-items: center;
+    margin-left: -7vw;
+    margin-top: 9vw;
+  }
+  /*крестик*/
+  #menu__toggle:checked ~ .menu__btn {
+    margin-top: 3vw;
+    margin-left: 4vw;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fcf5ed;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -7px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 7px;
+  }
+/* контейнер меню */
+  .menu__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #e5e5e5;
+    }
+  /* элементы меню */
+  .menu__box-link { /*выпадающее меню для смартфона*/
+    display: block;
+    width: 100%;
+    margin-bottom: 27px;
+    text-align: center; /*выравниваем по центру*/
+    text-transform: lowercase; /*все буквы прописные*/
+    color: #000;
+    font-family: 'Museo Sans Cyrl';
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu__box-link:first-child {
+    margin-top: 3vw;
+  }
+
+  .menu__box-link:last-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .menu__box-link:hover {
+    background-color: #fff;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span { /*открыть/закрыть бургер*/
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #172f27;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #172f27;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+    z-index: 1;
+  }
+/*анимация*/
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+
+  .menu__box {
+    transition-duration: .25s;
+  }
+
+  .menu__box-link {
+    transition-duration: .25s;
+  }
+  
+  .top {
+    margin-top: 0;
+    justify-content: space-around;
+  }
+
+  .inform {
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    margin-left: -10vw;
+    width: 318px;
+    height: 226px;
+  }
+
+  .text__Bali {
+    font-size: 170px;
+    line-height: 225px;
+  }
+
+  .text__Indonesia {
+    margin: 150px 0 0 60px;
+    font-size: 60px;
+    line-height: 79px;
+  }
+
+  .inform__title {
+    font-size: 18px;
+    line-height: 22px;
+    width: 290px;
+    margin-top: 42px;
+    margin-right: 7vw;
+  }
+
+  .inform__button {
+    margin-right: 14vw;
+  }
+
+  .images {
+    display: none;
+  }
+}
